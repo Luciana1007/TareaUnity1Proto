@@ -1,0 +1,15 @@
+Hola profe y Damián :D , en este proyecto armé un mini sistema de disparo para mostrar cómo se aplican dos principios de SOLID: el de responsabilidad única y el de segregación de interfaces. 
+Básicamente, tengo un PlayerController que solo se encarga de disparar, nada más. Cuando apretás la tecla espacio dispara una bala y con la tecla M dispara un proyectil mágico. 
+La gracia está en que esa clase no hace otra cosa más que encargarse de instanciar los proyectiles, cumpliendo así con la idea de que cada clase tenga una sola responsabilidad.
+Por otro lado, todos los proyectiles heredan de una clase abstracta llamada Projectile, que lo único que hace es darles movimiento hacia adelante. 
+Después cada proyectil concreto, como la bala o el rayo mágico, implementa una interfaz distinta dependiendo del tipo de daño que hacen. 
+La bala implementa la de daño físico y el rayo mágico la de daño mágico. 
+Esto sirve para mostrar el principio de segregación de interfaces, porque en vez de forzar a todos los proyectiles a implementar métodos que no usan, cada uno solo implementa lo que realmente necesita.
+
+
+Es bastante simple y esta representado con cubos y esferas en el entorno visual de Unity. Espero que puedan verlo, no se si hice bien el gitignore para que se abrá las carpetas provenientes de Unity.
+Si no llega a abrir el proyecto, intentaré subirlo de nuevo D:
+
+Espero tengan lindo día!
+
+(organice el texto así porque sino me daba toc que sean tres lineas con mil caracteres)
